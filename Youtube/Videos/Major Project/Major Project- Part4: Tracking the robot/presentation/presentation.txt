@@ -1,0 +1,22 @@
+OBJECT TRACKING:
+
+	Approach:
+
+		1. Points are Marked for source and Destination.
+		2. Box is drawn for identifying the object to track.
+		3. A sliding window is used to identify if a block is occupied or free(All Blocks are free since no obstacle for now).
+		4. An optimized path is drawn using A* Search Algorithm and commands are given.
+
+
+
+	Issues:
+
+		1. The commands being sent had some issues, leading to stopping of robot.
+		2. The Source and Destination were being dragged to corners of grids(causes issues when grid size too big).
+	 	3. Even with these issues the results were encouraging though.......
+
+
+	After Modifications:
+
+		We changed the grid size and fixed the issue of robot getting stuck again and again. The results were much better.
+

@@ -1,0 +1,36 @@
+OBSTACLE DETECTION:
+
+	Approach:
+
+		1. Using a color range in a given block, we determine whether it has obstacle or not.
+		2. The grid contatining obstacle is then marked as occupied grid in A* search Algorithm.
+		3. Path is then created avoiding the obstacle.
+
+	Possible Issues:
+
+		1. Using color to detect obstacle is not very reliable due to lighting conditions and other factors.
+		2. Having particular lighting conditions at all times is impractical.
+	 	3. Possible issues in multicolored environment or multicolored robot.
+
+
+	Initial Trials:
+
+		1. We used black color as the obstacle, the color range wasn't suitable resulting in all things being marked as obstacles.
+		2. However, after modifying the range of colors, less false positive were obtained but still the results weren't helpful.
+
+
+
+
+
+	Issues with robot control:
+
+		1. The robot moves in ways that are not understood, this can be because we haven't taken heading of vehicle into account.
+		2. Another issue is lag(Even though it is of the order of milliseconds), it may lead collisions.
+
+
+
+	Later Trials:
+
+		1. We Changed the color of obstacle to yellow, since black color is very common in the environment.
+		2. The results obtained were much better, However there are still a lot of issues.
+		3. At the end, we placed another black obstacle to see whether the model classifies, it as obstacle or not.
